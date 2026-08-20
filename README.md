@@ -5,7 +5,7 @@
 <h1 align="center">Grapheme</h1>
 
 <p align="center">
-  Локальная голосовая диктовка для macOS — push-to-talk, без облака.
+  On-device push-to-talk voice dictation for macOS — no cloud involved.
 </p>
 
 <p align="center">
@@ -16,53 +16,53 @@
 
 ---
 
-Grapheme распознаёт речь прямо на устройстве через [WhisperKit](https://github.com/argmaxinc/WhisperKit) на Neural Engine — без отправки аудио куда-либо. Зажал клавишу, сказал фразу, отпустил — текст вставлен туда, где стоял курсор.
+Grapheme transcribes speech entirely on-device using [WhisperKit](https://github.com/argmaxinc/WhisperKit) on the Neural Engine — no audio ever leaves your Mac. Hold a key, speak, release — the recognized text is inserted right where your cursor is.
 
-## Скачать
+## Download
 
-→ **[Последний релиз](https://github.com/itpnews/grapheme-releases/releases/latest)**
+→ **[Latest release](https://github.com/itpnews/grapheme-releases/releases/latest)**
 
-Скачайте `Grapheme-vX.Y.Z.dmg`, откройте и перетащите `Grapheme.app` в `Applications`.
+Download `Grapheme-vX.Y.Z.dmg`, open it, and drag `Grapheme.app` into `Applications`.
 
-Сборка подписана Developer ID (`The Metaverse Apps OU`) и нотаризована Apple — Gatekeeper пропустит её без предупреждений.
+The build is signed with a Developer ID (`The Metaverse Apps OU`) and notarized by Apple, so Gatekeeper lets it run without warnings.
 
-## Как это работает
+## How it works
 
-1. Зажмите **Right ⌥ Option** (клавиша по умолчанию) и говорите.
-2. Отпустите клавишу — через долю секунды распознанный текст появится в активном поле ввода.
-3. Если поле ввода недоступно (например, приложение не поддерживает программный ввод текста), текст просто окажется в буфере обмена.
+1. Hold **Right ⌥ Option** (the default hotkey) and speak.
+2. Release the key — a moment later, the transcribed text appears in whatever field is focused.
+3. If the focused app doesn't support programmatic text insertion, the text is copied to the clipboard instead.
 
-Grapheme умеет распознавать русский и английский в одной фразе без переключения раскладки, автоматически расставляет пунктуацию и убирает частые слова-паразиты и англицизмы ("клеймс" → *claims*, "слэш" → `/`), возвращая их к исходному написанию.
+Grapheme recognizes Russian and English in the same sentence without switching keyboard layouts, adds punctuation automatically, and cleans up filler words and stray anglicisms/loanwords, restoring them to their original spelling.
 
-Живая демонстрация есть прямо в онбординге при первом запуске — не нужно ничего диктовать вслепую, чтобы понять, как это работает.
+A live demo is built into first-run onboarding, so you can see it working before you ever have to dictate blind.
 
-## Разрешения
+## Permissions
 
-Приложению нужны три системных разрешения, и оно объясняет каждое из них по ходу первого запуска:
+Grapheme needs three system permissions, and it explains each one during onboarding:
 
-| Разрешение | Зачем |
+| Permission | Why |
 |---|---|
-| **Input Monitoring** | Распознать нажатие и отпускание клавиши-хоткея |
-| **Accessibility** | Вставить распознанный текст в поле ввода активного приложения |
-| **Microphone** | Записать аудио для распознавания, пока клавиша зажата |
+| **Input Monitoring** | Detect when the hotkey is pressed and released |
+| **Accessibility** | Insert the recognized text into the focused app |
+| **Microphone** | Record audio for transcription while the hotkey is held |
 
-Аудио и текст никогда не покидают устройство — распознавание работает полностью офлайн после первой загрузки модели.
+Audio and text never leave the device — recognition runs fully offline once the model is downloaded.
 
-## Автообновления
+## Auto-updates
 
-Grapheme проверяет обновления через [Sparkle](https://sparkle-project.org) и предлагает установить новую версию, когда она выходит. Проверить вручную можно через **Settings → Check for Updates…** в меню-баре.
+Grapheme checks for updates via [Sparkle](https://sparkle-project.org) and offers to install new versions as they're released. You can also check manually via **Settings → Check for Updates…** from the menu bar.
 
-Обновления публикуются в этом репозитории; исходный код и appcast подписаны отдельными ключами (код — Developer ID Apple, appcast — EdDSA), так что скомпрометировать один канал не значит подделать другой.
+Updates are published from this repository. The app binary and the appcast feed are signed with separate keys (Developer ID for the app, EdDSA for the appcast), so compromising one channel doesn't let an attacker forge the other.
 
-## Исходный код
+## Source code
 
-Исходный код Grapheme закрыт и разрабатывается в отдельном приватном репозитории. Здесь публикуются только собранные, подписанные и нотаризованные бинарники и `appcast.xml` для автообновления.
+Grapheme's source is closed and developed in a separate private repository. This repo publishes only the signed, notarized binaries and the `appcast.xml` used for auto-updates.
 
-## Обратная связь
+## Feedback
 
-Нашли баг или есть предложение — откройте [issue](https://github.com/itpnews/grapheme-releases/issues) в этом репозитории.
+Found a bug or have a suggestion? Open an [issue](https://github.com/itpnews/grapheme-releases/issues) in this repository.
 
-## Системные требования
+## System requirements
 
-- macOS 14.0 (Sonoma) или новее
-- Apple Silicon (WhisperKit использует Neural Engine)
+- macOS 14.0 (Sonoma) or later
+- Apple Silicon (WhisperKit relies on the Neural Engine)
