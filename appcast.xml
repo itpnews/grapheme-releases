@@ -3,6 +3,14 @@
     <channel>
         <title>Grapheme</title>
         <item>
+            <title>0.6.1</title>
+            <pubDate>Sat, 22 Aug 2026 17:21:11 +0100</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/itpnews/grapheme-releases/releases/download/v0.6.1/Grapheme-v0.6.1.dmg" length="17198507" type="application/octet-stream" sparkle:edSignature="RbU0YNwFIOpVxWus59LKS5jL6Xm6X4l8zCzhXZiTEWaQ6yPgRF/XszvLut/1MX6hnMv0jenmJR/aBWRrQBmyAg=="/>
+        </item>
+        <item>
             <title>0.6.0</title>
             <pubDate>Sat, 22 Aug 2026 15:19:30 +0100</pubDate>
             <sparkle:version>6</sparkle:version>
