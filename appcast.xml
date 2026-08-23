@@ -8,7 +8,7 @@
             <sparkle:version>8</sparkle:version>
             <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/itpnews/grapheme-releases/releases/download/v0.7.0/Grapheme-v0.7.0.dmg" length="8388428" type="application/octet-stream" sparkle:edSignature="+ULe0AdkrX26mIgB9i+ivtyRXry5WiSs9gzY/2RK3fSeVmUdokqrJCY3alWTZolcVTIWxlw6jma7b26A1B5JBw==" length="8388428"/>
+            <enclosure url="https://github.com/itpnews/grapheme-releases/releases/download/v0.7.0/Grapheme-v0.7.0.dmg" type="application/octet-stream" sparkle:edSignature="+ULe0AdkrX26mIgB9i+ivtyRXry5WiSs9gzY/2RK3fSeVmUdokqrJCY3alWTZolcVTIWxlw6jma7b26A1B5JBw==" length="8388428"/>
         </item>
         <item>
             <title>0.6.1</title>
