@@ -8,6 +8,15 @@
             <sparkle:version>17</sparkle:version>
             <sparkle:shortVersionString>0.11.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<h4>Requirements</h4>
+<ul>
+<li><strong>macOS 14 (Sonoma) or later</strong> — the app won't launch on older versions.</li>
+<li><strong>Apple Silicon (M1 or newer)</strong> — recognition runs on the Neural Engine; Intel Macs are not supported.</li>
+</ul>
+<h4>Installation</h4>
+<p>Drag <code>Grapheme.app</code> into Applications. The first launch downloads the recognition model (~630 MB) and walks you through three system permissions.</p>
+]]></description>
             <enclosure url="https://github.com/itpnews/grapheme-releases/releases/download/v0.11.1/Grapheme-v0.11.1.dmg" type="application/octet-stream" sparkle:edSignature="ThJc0vfLvueankBAW4JISOIwNpapBBG0V6wocTS6SQeZDM9tp/FAsddQGbyCf84If4A9Nt8WDPOZFN3C5TBRBA==" length="19569446"/>
         </item>
         <item>
