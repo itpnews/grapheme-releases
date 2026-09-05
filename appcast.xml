@@ -3,6 +3,22 @@
     <channel>
         <title>Grapheme</title>
         <item>
+            <title>0.11.4</title>
+            <pubDate>Sat, 05 Sep 2026 17:52:20 +0100</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>0.11.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<h4>Requirements</h4>
+<ul>
+<li><strong>macOS 14 (Sonoma) or later</strong> — the app won't launch on older versions.</li>
+<li><strong>Apple Silicon (M1 or newer)</strong> — recognition runs on the Neural Engine; Intel Macs are not supported.</li>
+</ul>
+<h4>Installation</h4>
+<p>Drag <code>Grapheme.app</code> into Applications. The first launch downloads the recognition model (~630 MB) and walks you through three system permissions.</p>]]></description>
+            <enclosure url="https://github.com/itpnews/grapheme-releases/releases/download/v0.11.4/Grapheme-v0.11.4.dmg" type="application/octet-stream" sparkle:edSignature="7olJdWtZHq7pvuDIlYJwZMOBxqSvkMantB1uvrrcjByQK+Sg+LSmTJMNByOfgkNVfK9dYv+EJuMaQ/DJw83dAw==" length="19576708"/>
+        </item>
+        <item>
             <title>0.11.3</title>
             <pubDate>Thu, 03 Sep 2026 15:49:16 +0100</pubDate>
             <sparkle:version>19</sparkle:version>
